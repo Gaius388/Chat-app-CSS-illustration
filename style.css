@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 1em;
+}
+main{
+    background-color: hsl(270, 20%, 96%);
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.backdrop{
+    width: 200px;
+    height: 500px;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 0 0 290px 0;
+    z-index: 1;
+    position: absolute;
+}
+.container{
+    width: 18em;
+    height: auto;
+    padding: 0 auto;
+    position: relative;
+    z-index: 2;
+    margin: 3.75em auto;
+}
+.message-app{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 0.7em;
+    border-radius: 1.8em;
+    box-shadow: 2px 1px 30px hsl(270, 7%, 64%);
+}
+.profile-screen{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 1.65em;
+}
+.top-notch{
+    width: 7.5em;
+    height: 30px;
+    margin: 0 auto;
+    background-color: white;
+    position: absolute;
+    border-radius: 1.5em;
+    left: calc(50% - 4em)
+}
+.section-1{
+    width: 100%;
+    height: 5.3em;
+    background-color: hsl(276, 100%, 81%);
+    border-radius: 1.65em 1.65em 0.3em 0.3em;
+    display: flex;
+    padding: 0 0.7em;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+.profile{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2em;
+}
+.profile h4{
+    font-size: 1.2rem;
+    color: hsl(270, 20%, 96%);
+    font-weight: 400;
+
+}
+.profile-name{
+    display: block;
+    padding-left: 0.7em;
+    line-height: 0.9em;
+}
+.profile-name > h2{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: hsl(270, 20%, 96%);
+}
+.profile-name > p{
+    font-size: 0.6rem;
+    opacity: 0.5;
+    color: hsl(270, 20%, 96%);
+}
+.profile-pic{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 0.7em;
+    border: 3px solid rgb(255, 255, 255, 70%);
+}
+.options{
+    width: 1.4em;
+    height: 1.4em;
+    margin-left: 4em;
+}
+.left-chat{
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(276, 83%, 93%);
+    width: 60%;
+    height: auto;
+    padding: 0.8em;
+    border-radius: 0.95em 0.95em 0.95em 0;
+    margin: 0.8em 0 0 0.7em;
+    font-size: 0.6rem;
+    opacity: 0.8;
+}
+.chat-image{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.7em 0 0 0.5em;
+}
+.chat-image img{
+    width: 2.8em;
+    border-radius: 0.7em;
+    margin: 0.4em;
+}
+.right-chat{
+    color: hsl(270, 7%, 64%);
+    background-color: white;
+    width: 50%;
+    height: auto;
+    padding: 0.8em;
+    border-radius: 0.95em 0.95em 0 0.95em ;
+    margin: 0.7em 0 0 13em;
+    font-size: 0.6rem;
+    opacity: 0.8;
+}
+.price-tag{
+    border-radius: 0.95em 0.95em 0.95em 0;
+    width: 70%;
+    height: auto;
+    padding: 1.2em;
+    background: linear-gradient(94deg, rgba(233,66,255,1) 0%, rgba(162,59,255,1) 39%, rgba(136,56,255,1) 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.6rem;
+    margin:0.8em 0 0 0.5em;
+    color: white;
+}
+.price-tag span{
+    border: 1px dotted hsl(270, 20%, 96%);
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin-right: 0.8em;
+}
+.price{
+    align-self: auto;
+    margin-left: auto;
+    font-size: 0.8rem;
+}
+.chatbox{
+    position: relative;
+}
+.chatbox > input{
+    outline: none;
+    border: none;
+    width: 95%;
+    height: 3em;
+    margin: 1em 0.5em 1.5em 0.5em;
+    padding: 0.8em;
+    font-size: 0.7rem;
+    border-radius: 2em;
+}
+.sendbtn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.text h1{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: hsl(271, 36%, 24%);
+    text-align: center;
+    margin-bottom: 1em;
+}
+.text p{
+    font-size: 0.8rem;
+    color: hsl(270, 7%, 64%);
+    text-align: center;
+    margin: 1em auto 2em auto;
+    line-height: 1.5em;
+    width: 60%;
+}
+.backdrop-2{
+    width: 18em;
+    height: 70%;
+    position: fixed;
+    background-color:  hsl(276, 100%, 81%);
+    opacity: 10%;
+    border-radius: 12.5em 12.5em 0 0;
+    bottom: 0;
+    right: 0;
+}
+@media (min-width:570px) and (max-width:767px){
+    .container{
+        left: -5em;
+        top: 1em;
+    }
+}
+@media (min-width:768px) and (max-width:1023px){
+    .container{
+        right: -5em;
+    }
+}
+
+@media (min-width:768px){
+    .backdrop{
+        position: absolute;
+        top: 0;
+        left: -5em;
+        width: 26em;
+        height: 80vh;
+        border-radius: 0 0 11.25em 11.25em;
+    }
+    body main{
+        flex-direction: row;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        margin: 0;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 45%;
+        margin-left: 2.5em;
+    }
+    .text h1{
+        text-align: left;
+        margin: 1.87em 1.87em 0 3.2em;
+    }
+    .text p{
+        text-align: left;
+        line-height: 2em;
+    }
+    .backdrop-2{
+        width: 26em;
+        height: 70%;
+        position: absolute;
+        background-color:  hsl(276, 100%, 81%);
+        opacity: 10%;
+        border-radius: 12.5em 12.5em 0 0;
+        bottom: 0;
+        right: 0;
+    }
+}
